@@ -1,0 +1,103 @@
+// Файл шрифтов
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+// Переменные
+:root {
+  --sizeMain: 14px;
+  --text-main: #000000;
+  --bg: #ffffff;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--text-main);
+  font-weight: 400;
+  font-size: var(--sizeMain);
+  line-height: 20px;
+  background-color: #14b1d8;
+}
+/*  */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*  */
+._container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+.main {
+  padding: 25px 15px;
+  border-radius: 15px;
+  background-color: #f0eded;
+  min-width: 600px;
+  &__title {
+    font-size: 30px;
+    margin: 0px 0px 15px 0px;
+    font-weight: 700;
+  }
+  &__link {
+    color: #14b1d8;
+    display: block;
+    margin: 0px 0px 10px 0px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 30px 0px;
+  }
+  &__label-email,
+  &__label-token {
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
+  }
+  &__email {
+    margin: 0px 0px 20px 0px;
+  }
+  &__email,
+  &__token {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+  &__token {
+    margin: 0px 0px 30px 0px;
+  }
+  &__safe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-color: #202b2c;
+    color: #f0eded;
+    box-shadow: 1px 3px 0 0 #7e7676;
+    transition: transform 0.5s, box-shadow 1s;
+    &:hover {
+      background-color: #182021;
+      box-shadow: 1px 2px 0 0 #7e7676;
+      transform: translateY(1px);
+    }
+    &:active {
+      box-shadow: 1px 0px 0 0 #7e7676;
+      transform: translateY(2px);
+    }
+  }
+  &__video-title {
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+  }
+  &__video {
+    border-radius: 3px;
+  }
+}

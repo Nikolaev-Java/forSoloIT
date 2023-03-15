@@ -1,0 +1,43 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+  <!-- Заголовок страницы в браузере -->
+  <title>SoloIT</title>
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" href=".//css/style.css" />
+  <!-- Кодировка страницы -->
+  <meta charset="UTF-8" />
+  <!-- Адаптив -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__container _container">
+        <h1 class="main__title">Доступ к Бизон</h1>
+        <a href="https://bizon365.ru/" target="_blank" class="main__link">Перейти на Бизон</a>
+        <form action="#" class="main__form">
+          <label for="email" class="main__label-email">E-mail</label>
+          <input id="email" type="email" class="main__email">
+          <label for="token" class="main__label-token">API-токен</label>
+          <input id="token" type="text" class="main__token">
+          <button type="submit" class="main__safe">Сохранить</button>
+        </form>
+        <div class="main__video-title">Где взять API-токен</div>
+        <iframe class="main__video" width="560" height="315" src="https://www.youtube.com/embed/4Q9-v2L4h3U"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </main>
+  </div>
+  <script type="text/javascript" src=".//js/script.js"></script>
+</body>
+
+</html>
